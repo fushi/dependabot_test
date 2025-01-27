@@ -17,3 +17,6 @@ jobs:
         uses: actions/checkout@v4
       - name: 'Dependency Review'
         uses: actions/dependency-review-action@v4
+        with:
+          base-ref: 923144ef3ea22622b9366815bfbad70d87da9ac0
+          head-ref: ${{ github.head_ref }}
